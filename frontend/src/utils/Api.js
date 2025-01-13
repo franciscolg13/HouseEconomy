@@ -6,6 +6,7 @@ export const addTask = async (task) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(task),
   });
+
   if (!response.ok) throw new Error('Error al añadir tarea');
   return response.json();
 };
