@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-import { addTask } from '../utils/api';
+import { addTask } from '../utils/Api';
 
 export default function ParentScreen() {
   const [task, setTask] = useState('');
